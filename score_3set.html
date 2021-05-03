@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+  </head>
+  <body>
+    <h1>Tennis Score(3set)</h1>
+    <!-- スコアボード -->
+    <table
+      border="2"
+      style="
+        border-collapse: collapse;
+        text-align: center;
+        margin: 5px;
+        font-size: 18px;
+      "
+      id="tennis1"
+    >
+      <tr>
+        <td style="width: auto;"></td>
+        <td style="width: auto;">1set</td>
+        <td style="width: 40px;"></td>
+      </tr>
+      <tr>
+        <th style="padding: 3px;">自分</th>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <th style="padding: 3px;">相手</th>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+    </table>
+
+    <p>
+      <button id="get1">自分のウィナー (+)</button>
+      <button id="lost2">自分のミス (-)</button>
+    </p>
+    <p>
+      <button id="lost1">相手のウィナー (-)</button>
+      <button id="get2">相手のミス (+)</button>
+    </p>
+    <p>
+      <button id="reset">スコアリセット</button>
+    </p>
+
+    <table
+      border="2"
+      style="
+        border-collapse: collapse;
+        text-align: center;
+        margin: 5px;
+        font-size: 18px;
+      "
+    >
+      <tr>
+        <td style="width: auto; padding: 3px;"></td>
+        <th style="width: 40px; padding: 3px;">自分</th>
+        <th style="width: 40px; padding: 3px;">相手</th>
+      </tr>
+      <tr>
+        <th style="padding: 3px;">winner</th>
+        <td id="winner1">0</td>
+        <td id="winner2">0</td>
+      </tr>
+      <tr>
+        <th>miss</th>
+        <td id="miss1" style="padding: 3px;">0</td>
+        <td id="miss2">0</td>
+      </tr>
+      <tr style="height: 4px;">
+        <th></th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th style="padding: 5px;">Total point</th>
+        <td id="total1">0</td>
+        <td id="total2">0</td>
+      </tr>
+    </table>
+
+    <p id="finish"></p>
+    
+    <script src="./score_3set_0.js"></script>
+    <script src="./score_3set_1.js"></script>
+    <script src="./score_3set_2.js"></script>
+    <script src="./score_3set_3.js"></script>
+    <script src="./score_3set_4.js"></script>
+    <script src="./score_3set_5.js"></script>
+  </body>
+</html>
